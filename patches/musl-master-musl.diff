@@ -1,0 +1,11 @@
+--- a/arch/or1k/syscall_arch.h	2015-02-12 21:31:55.020000001 -0800
++++ b/arch/or1k/syscall_arch.h	2015-02-12 21:30:37.000000000 -0800
+@@ -122,3 +122,8 @@
+ #define SYSCALL_NO_INLINE
+ 
+ #endif
++
++#define VDSO_USEFUL
++#define VDSO_CGT_SYM "__vdso_clock_gettime"
++#define VDSO_CGT_VER "LINUX_2.6"
++
